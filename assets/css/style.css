@@ -1,214 +1,368 @@
 /* FUENTES DE GOOGLE */
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Source+Sans+3:wght@400;600&display=swap');
 
+:root {
+  --papel: #faf8f4;
+  --blanco: #ffffff;
+  --tinta: #1d1d1b;
+  --suave: #5b5852;
+  --linea: #e2ddd3;
+  --acento: #7a3324;
+  --acento-oscuro: #5e2619;
+}
 
-.navbar .nav-link, .navbar .navbar-brand {
-    color: white; /* Texto en blanco */
-  }
-
-/* Fondo y texto del body */
+/* Base */
 body {
-    background-color: #343a40; /* Fondo oscuro pero más claro que el navbar */
-    color: white; /* Texto en blanco */
-    margin: 0;
-    padding: 0;
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  h1, h2 {
-    color: white; /* Encabezados en blanco */
-  }
-  
-  section {
-    padding-top: 4rem; /* Con esto el navbar no tapa el nombre */
-    border-bottom: 1px solid #444; /* Bordes entre secciones para diferenciarlas */
-    min-height: 100vh;
-  }
+  background-color: var(--papel);
+  color: var(--tinta);
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
 
-  footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #212529; /* Mismo color que el navbar */
-    color: white; /* Texto en blanco */
-  }
-  .navbar-dark .navbar-nav .nav-item .nav-link.active {
-    background-color: blue; /* Color de fondo oscuro para el enlace activo */
-    color: white; /* Color de texto blanco para el enlace activo */
-  }
+h1, h2, h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  color: var(--tinta);
+  font-weight: 600;
+}
 
-  .navbar-dark .navbar-nav .nav-item .nav-link:hover {
-    background-color: blue; /* Color de fondo al pasar el cursor */
-  }
-  .navbar-item{
-    background-color: #212529;
-  }
+h2 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
 
-  article{
-    padding-inline: 4rem;
-  }
-  
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
 
-  /* Estilos personalizados para la sección "Inicio" */
-  #Inicio{
-    color: black;
-    display: flex; /* Alinea el contenido en el centro */
-    justify-content: center; /* Alinea horizontalmente al centro */
-    align-items: center; /* Alinea verticalmente al centro */
-    text-align: center; /* Texto centrado */
-    flex-direction: column; /* Alinea en columna los elementos */
-    background-color: white;
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+a {
+  color: var(--acento);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--acento-oscuro);
+  text-decoration: underline;
+}
+
+section {
+  padding: 5.5rem 0 4rem; /* Con esto el navbar no tapa los títulos */
+  border-bottom: 1px solid var(--linea);
+}
+
+article {
+  padding-inline: 4rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--linea);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: var(--suave);
+}
+
+.navbar .navbar-brand {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  color: var(--tinta);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--acento);
+}
+
+/* Inicio */
+#Inicio {
+  min-height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blanco);
+}
 
 #Inicio h1 {
-  color: black;
-  font-size: 4rem; /* Tamaño de la fuente del título */
-  margin: 0; /* Elimina márgenes superiores/inferiores */
+  font-size: 3.6rem;
+  margin: 0 0 0.8rem;
 }
 
 #Inicio span {
-  color: blue; /* Color azul para el nombre */
+  color: var(--acento);
 }
 
 #Inicio p {
-  font-size: 2.5rem; /* Tamaño de la fuente del subtítulo */
-  margin-top: 1.5rem; /* Ajusta el espacio entre el h1 y el p */
+  font-size: 1.6rem;
+  color: var(--suave);
 }
 
-/* Estilos para la sección Sobre Mi*/
-
-.Sobremi{
-  padding: 55px;
-  text-align: center;
+.typed-cursor {
+  color: var(--acento);
 }
 
-.contenido-sobremi{
+/* Sobre mí */
+.Sobremi {
+  padding-inline: 2rem;
+}
+
+.contenido-sobremi {
   max-width: 1100px;
   margin: auto;
 }
 
-.Sobremi h2{
-  font-family: "Jost", sans-serif;
-  font-size: 48px;
+.Sobremi h2 {
   text-align: center;
-  
 }
 
-.Sobremi .contenido-sobremi p{
-  line-height: 22px;
-  margin-bottom: 20px;
+.Sobremi .contenido-sobremi > p {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 1.15rem;
 }
 
-.Sobremi .contenido-sobremi p span{
-  font-weight: bold;
-}
-
-.Sobremi .fila{
+.Sobremi .fila {
   display: flex;
+  gap: 2rem;
 }
 
-.Sobremi .col span{
-  font-weight: bold;
+.Sobremi .fila .col {
+  background-color: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  padding: 1.8rem 2rem;
 }
 
-.Sobremi .fila .col{
-  margin: 30px;
+.Sobremi .fila .col h3 {
+  margin-top: 1.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--linea);
 }
 
-.Sobremi .fila .col h3{
-  font-size: 30px;
-  font-family: "Jost", sans-serif;
-  margin-bottom: 10px;
+.Sobremi .fila .col h3:first-child {
+  margin-top: 0;
 }
 
-.contenido-hist{
-  margin-bottom: 20px;
-}
-
-.Sobremi .fila .col ul{
+.Sobremi .fila .col ul {
   list-style: none;
+  padding-left: 0;
 }
 
-.Sobremi .fila .col ul li{
-  margin: 12px;
+.Sobremi .fila .col ul li {
+  margin: 0.45rem 0;
 }
 
-.Sobremi .fila .col ul li strong{
+.Sobremi .fila .col ul li strong {
   display: inline-block;
   width: 110px;
+  font-weight: 600;
 }
 
-.Sobremi .fila .col ul li span{
-  background-color: aqua;
+.exp, .hist, .cert {
+  margin-bottom: 1rem;
 }
 
-.contenedor-intereses{
+.exp span, .hist span, .cert span {
+  font-weight: 600;
+}
+
+.exp p, .cert p {
+  color: var(--suave);
+  margin: 0.2rem 0 0;
+}
+
+.contenedor-intereses {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 0.5rem;
 }
 
-.interes{
-  width: 200px;
-  height: 100px;
-  background-color: #212529;
-  border-radius: 10px;
-  margin: 0 15px 15px 0;
-  display: flex;
+.interes {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--suave);
+}
+
+.interes i {
+  color: var(--acento);
+}
+
+/* Habilidades */
+.grupo-habilidades {
+  background-color: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  padding: 1.5rem 1.8rem;
+  height: 100%;
+}
+
+.grupo-habilidades ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.grupo-habilidades li {
+  margin: 0.3rem 0;
+}
+
+.grupo-habilidades li::marker {
+  color: var(--acento);
+}
+
+.grupo-habilidades small {
+  color: var(--suave);
+}
+
+/* Proyectos de datos */
+.card {
+  background-color: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: contain;
+  padding: 0.6rem;
+  background-color: #faf7f1; /* el mismo fondo de los gráficos */
+  border-bottom: 1px solid var(--linea);
+  border-radius: 6px 6px 0 0;
+}
+
+.card .curso {
+  color: var(--suave);
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background-color: var(--acento);
+  border-color: var(--acento);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--acento-oscuro);
+  border-color: var(--acento-oscuro);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--tinta);
+  border-color: var(--tinta);
+}
+
+.btn-secondary:hover {
+  background-color: var(--tinta);
+  color: var(--blanco);
+}
+
+/* Proyectos web */
+#Proyectos {
   text-align: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/* Estilos para la sección Habilidades */
-#Habilidades {
-  display:flex;
-  align-items: center;
+#Proyectos h2 {
+  margin-bottom: 0.5rem;
 }
 
-/* Estilos para la sección Proyectos */
-
-#Proyectos{
-  text-align: center;
-  align-items: center;
-  height:100vh;
-  align-items: center;
-  justify-content: center;
-  padding: 150px;
+#Proyectos .nota {
+  color: var(--suave);
+  margin-bottom: 2rem;
 }
 
-#Proyectos h2{
-  margin-bottom: 50px;
-}
-
-.carousel-item img{
+.carousel-item img {
   margin: auto;
   max-width: 50vw;
   height: 50vh;
-  border-radius: 20px;
-  border: #212529 solid 5px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--linea);
+  background-color: var(--blanco);
+  cursor: pointer;
 }
 
-.modal-title {
-  color: black;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--tinta);
+  border-radius: 50%;
+  opacity: 0.8;
 }
 
-.modal-body img{
+.modal-body img {
   width: 100%;
 }
 
-/* Estilos para la sección contáctame */
+/* Contacto */
+#Contactame h2 {
+  text-align: center;
+}
 
-#Contáctame{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#Contactame form {
+  max-width: 820px;
+  margin: auto;
+}
+
+.form-control:focus {
+  border-color: var(--acento);
+  box-shadow: 0 0 0 0.2rem rgba(122, 51, 36, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--suave);
+}
+
+footer .redes a {
+  display: inline-block;
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+  color: var(--tinta);
+}
+
+footer .redes a:hover {
+  color: var(--acento);
+}
+
+/* Pantallas angostas */
+@media (max-width: 800px) {
+  .Sobremi .fila {
+    flex-direction: column;
+  }
+
+  article {
+    padding-inline: 1rem;
+  }
+
+  #Inicio h1 {
+    font-size: 2.4rem;
+  }
+
+  #Inicio p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-item img {
+    max-width: 80vw;
+    height: auto;
+  }
 }
