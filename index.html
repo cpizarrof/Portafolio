@@ -371,66 +371,7 @@
       <!-- Sección Proyectos web -->
       <section id="Proyectos">
         <h2>Proyectos web</h2>
-
-        <!-- Inicio sitio de Gráfica Creativa -->
-        <div class="container">
-          <div class="sitio-destacado">
-            <a
-              class="sitio-captura"
-              href="https://graficacreativaspa.cl"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="./assets/img/web-inicio.jpg"
-                alt="Página de inicio de graficacreativaspa.cl"
-                loading="lazy"
-              />
-            </a>
-            <div class="sitio-texto">
-              <h3>Sitio web de Gráfica Creativa SpA</h3>
-              <p class="curso">graficacreativaspa.cl · 2026</p>
-              <p>
-                El sitio de la imprenta familiar donde trabajo. Tiene el catálogo
-                por línea de productos, una galería con 49 trabajos hechos para
-                instituciones de todo Chile y un formulario para pedir
-                cotización. Las fotos son de trabajos reales, recortadas para
-                dejarlas sobre un fondo limpio, y cada línea de productos tiene
-                su propia página para aparecer en Google.
-              </p>
-              <p class="tecnologias">
-                HTML, CSS y JavaScript · páginas generadas con Python · Netlify.
-                Desarrollado con asistencia de IA.
-              </p>
-              <a
-                href="https://graficacreativaspa.cl"
-                target="_blank"
-                rel="noopener"
-                ><button type="button" class="btn btn-primary">
-                  Visitar el sitio
-                </button></a
-              >
-            </div>
-          </div>
-          <div class="sitio-paginas">
-            <figure>
-              <img src="./assets/img/web-trabajos.jpg" alt="Galería de trabajos realizados" loading="lazy" />
-              <figcaption>Trabajos realizados</figcaption>
-            </figure>
-            <figure>
-              <img src="./assets/img/web-linea.jpg" alt="Página de una línea de productos" loading="lazy" />
-              <figcaption>Una línea de productos</figcaption>
-            </figure>
-            <figure class="celular">
-              <img src="./assets/img/web-celular.jpg" alt="El sitio en un celular" loading="lazy" />
-              <figcaption>En el celular</figcaption>
-            </figure>
-          </div>
-        </div>
-        <!-- Fin sitio de Gráfica Creativa -->
-
-        <h3 class="subtitulo-ejercicios">Ejercicios del curso</h3>
-        <p class="nota">Del programa Desarrollo Web Full Stack Java. Haz clic en una imagen para ver el detalle.</p>
+        <p class="nota">El sitio de Gráfica Creativa SpA y ejercicios del programa Desarrollo Web Full Stack Java. Haz clic en una imagen para ver el detalle.</p>
         <article>
           <!-- Inicio carrusel -->
           <div
@@ -440,6 +381,36 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <img
+                  src="./assets/img/web-inicio.jpg"
+                  class="d-block"
+                  alt="Sitio de Gráfica Creativa SpA: inicio"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="modalcito(3)"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/web-trabajos.jpg"
+                  class="d-block"
+                  alt="Sitio de Gráfica Creativa SpA: trabajos realizados"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="modalcito(4)"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/web-linea.jpg"
+                  class="d-block"
+                  alt="Sitio de Gráfica Creativa SpA: una línea de productos"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="modalcito(5)"
+                />
+              </div>
+              <div class="carousel-item">
                 <img
                   src="./assets/img/aerolineas.png"
                   class="d-block"
@@ -531,8 +502,8 @@
                   Cerrar
                 </button>
                 <a id="modalEnlace" href="https://github.com/cpizarrof" target="_blank"
-                  ><button type="button" class="btn btn-primary">
-                    Github
+                  ><button type="button" class="btn btn-primary" id="modalBoton">
+                    GitHub
                   </button></a
                 >
               </div>

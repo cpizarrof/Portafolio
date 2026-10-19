@@ -284,60 +284,6 @@ article {
   margin-bottom: 2rem;
 }
 
-/* Sitio de Gráfica Creativa */
-.sitio-destacado {
-  display: grid;
-  grid-template-columns: 1.35fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  text-align: left;
-  background-color: var(--blanco);
-  border: 1px solid var(--linea);
-  border-radius: 6px;
-  padding: 1.5rem;
-  margin: 1.5rem 0 1.25rem;
-}
-
-.sitio-captura img,
-.sitio-paginas img {
-  width: 100%;
-  display: block;
-  border: 1px solid var(--linea);
-  border-radius: 4px;
-}
-
-.sitio-texto .curso {
-  color: var(--suave);
-  font-size: 0.95rem;
-}
-
-.sitio-texto .tecnologias {
-  color: var(--suave);
-  font-size: 0.95rem;
-}
-
-.sitio-paginas {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.42fr;
-  gap: 1.25rem;
-  align-items: start;
-  margin-bottom: 3rem;
-}
-
-.sitio-paginas figure {
-  margin: 0;
-}
-
-.sitio-paginas figcaption {
-  color: var(--suave);
-  font-size: 0.9rem;
-  margin-top: 0.4rem;
-}
-
-.subtitulo-ejercicios {
-  margin-bottom: 0.3rem;
-}
-
 .carousel-item img {
   margin: auto;
   max-width: 50vw;
@@ -399,15 +345,6 @@ footer .redes a:hover {
 
 /* Pantallas angostas */
 @media (max-width: 800px) {
-  .sitio-destacado,
-  .sitio-paginas {
-    grid-template-columns: 1fr;
-  }
-
-  .sitio-paginas .celular {
-    max-width: 220px;
-  }
-
   .Sobremi .fila {
     flex-direction: column;
   }

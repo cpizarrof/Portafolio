@@ -33,6 +33,27 @@ const proyectos = [
     desc: "Consulta del estado del tiempo a partir de una API externa.",
     github: "https://github.com/cpizarrof",
     },
+    {
+    name: "Gráfica Creativa SpA · Inicio",
+    img: "./assets/img/web-inicio.jpg",
+    desc: "Sitio de la imprenta familiar donde trabajo, con el catálogo por línea de productos y un formulario para pedir cotización. HTML, CSS y JavaScript, con las páginas generadas en Python y publicado en Netlify. Desarrollado con asistencia de IA.",
+    github: "https://graficacreativaspa.cl",
+    boton: "Ver el sitio",
+    },
+    {
+    name: "Gráfica Creativa SpA · Trabajos realizados",
+    img: "./assets/img/web-trabajos.jpg",
+    desc: "Galería con 49 trabajos hechos para instituciones de todo Chile, con filtros por tipo de producto. Las fotos son de trabajos reales, recortadas para dejarlas sobre un fondo limpio.",
+    github: "https://graficacreativaspa.cl/trabajos",
+    boton: "Ver el sitio",
+    },
+    {
+    name: "Gráfica Creativa SpA · Líneas de productos",
+    img: "./assets/img/web-linea.jpg",
+    desc: "Cada línea de productos tiene su propia página, pensada para aparecer en Google cuando una institución busca ese tipo de impresos.",
+    github: "https://graficacreativaspa.cl/impresos-institucionales",
+    boton: "Ver el sitio",
+    },
 ];
 
 // Función para definir cada modal
@@ -46,6 +67,7 @@ function modalcito(i) {
     desc.innerHTML = proyectos[i].desc;
     const a = modal.querySelector("#modalEnlace");
     a.setAttribute("href", proyectos[i].github);
+    modal.querySelector("#modalBoton").textContent = proyectos[i].boton || "GitHub";
 }
 
 // Función de animación de escritura con la biblioteca Typed.js
