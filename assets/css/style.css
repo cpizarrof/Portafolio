@@ -243,6 +243,12 @@ article {
   border-radius: 6px 6px 0 0;
 }
 
+/* el proyecto del trabajo va primero y a todo el ancho: la imagen con su alto natural */
+.card-destacada .card-img-top {
+  height: auto;
+  padding: 0;
+}
+
 .card .curso {
   color: var(--suave);
   font-size: 0.95rem;
